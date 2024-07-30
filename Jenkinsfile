@@ -29,7 +29,7 @@ pipeline {
                             type: 'war'
                         ]
                     ], 
-                    credentialsId: 'nexus3', 
+                    credentialsId: 'nexuscred', 
                     groupId: 'in.javahome', 
                     nexusUrl: '13.201.188.143:8081', 
                     nexusVersion: 'nexus3', 

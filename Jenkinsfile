@@ -4,6 +4,10 @@ pipeline {
         maven 'Maven'
         jdk 'Java'
     }
+
+    environment {
+        NEXUS_CREDENTIALS = credentials('nexuscred')
+    }
     stages{
         stage('Build'){
             steps{

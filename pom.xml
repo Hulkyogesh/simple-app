@@ -4,7 +4,7 @@
 	<groupId>in.javahome</groupId>
 	<artifactId>simple-app</artifactId>
 	<packaging>war</packaging>
-	<version>RELEASE</version>
+	<version>RELEASES</version>
 	<name>simple-app</name>
 	<url>http://maven.apache.org</url>
 	

@@ -21,6 +21,10 @@ pipeline {
 
                     def mavenPom = readMavenPom file: 'pom.xml'
                     def nexusRepoName = mavenPom.version.endsWith("RELEASE") ? "Hello-World-snapshot" : "Hello-World-release"
+                    def warFileName = sh(
+                        script: "ls target/*.war | xargs -n 1 basename",
+                        returnStdout: true
+                    ).trim()
                     nexusArtifactUploader artifacts: [
                         [
                             artifactId: 'simple-app', 
